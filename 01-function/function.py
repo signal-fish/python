@@ -16,3 +16,8 @@ def f2(a, b, c=0, *, d, **kwargs):
 
 args, kwargs = (1, 2, 3), {'d': 99, 'x': '#'}
 f2(*args, **kwargs)
+
+print("=" * 30)
+
+print(list(map(lambda x: x*x, range(1, 5))))
+print(list(filter(lambda x: x % 2 == 0, range(1, 11))))
