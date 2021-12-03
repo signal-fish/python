@@ -1,3 +1,5 @@
+import functools
+
 def f1(a, b, c=0, *args, **kwargs):
     print(f"a = {a}, b = {b}, c = {c}, args = {args}, kwargs = {kwargs}")
 
@@ -21,3 +23,10 @@ print("=" * 30)
 
 print(list(map(lambda x: x*x, range(1, 5))))
 print(list(filter(lambda x: x % 2 == 0, range(1, 11))))
+
+# partial function
+int2 = functools.partial(int, base=2)
+print(f"int2('1000000') = {int2('1000000')}")
+print(f"int2('1010101') = {int2('1010101')}")
+
+
