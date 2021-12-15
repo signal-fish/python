@@ -1,0 +1,20 @@
+1. Old Style:
+     name = 'signal'
+     'Hello, %s' % name
+
+2. New Style:
+     n = 1
+     'The number is {}'.format(n)
+
+3. Literal String Interpolation (python3.6+):
+     age = 24
+     f'I am {age} years old'
+
+4. Template Strings:
+     from string import Template
+     name = 'fish'
+     t = Template('Hey, $name!')
+     t.subtitute(name=name)
+
+5. Python String Formatting Rule:
+     If the format strings are user-supplied, use Template Strings to avoid security issues. Otherwise, use Literal String Interpolation if you're on Python 3.6+, and "New Style" string formatting if you're not.

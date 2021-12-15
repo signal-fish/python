@@ -1,0 +1,15 @@
+1. Single Leading Underscore "_var":
+     Naming convention indicating a name is meant for internal use. Generally not enforced by the Python interpreter (except in wildcard imports) and meant as a hint to the programmer only.
+
+2. Single trailing underscores "var_":
+     Used by convension to avoid naming conflicts with Python keywords
+
+3. Double leading underscore "__var":
+     Triggers name mangling when used in a class context. 
+Enforced by the python interpreter.
+
+4. Double Leading and Trailing Underscore "__var__":
+     Indicates special methods defined by the Python language. Avoid this naming scheme for your own attribute
+ 
+5. Single underscore "_":
+     Sometimes used as a name for temporary or insignificant variales. Also, it represents the result of the last expression in a python REPL session.
